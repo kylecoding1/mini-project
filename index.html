@@ -6,21 +6,43 @@
 </head>
 <body>
 	<header>
-		<h1>CSS Snippet</h1>
+		<h1>CSS Snippet Hover/click Cheatsheet</h1>
 	</header>
     <!--box classes so we can create different animation/styles for each one-->
 	<main>
 		<div class="box red" onclick="this.classList.toggle('clicked')">
-            <h2>Box-Shadow</h2>
+            <h2>Red Box</h2>
+            <p>HTML: div class="box red" onclick="this.classList.toggle('clicked')"
+              
+              CSS: .red:hover {
+              transform: rotate(10deg);
+              box-shadow: 0 0 20px red;
+            }</p>
           </div>
           <div class="box blue" onclick="this.classList.toggle('clicked')">
-            <h2>Transform: translatingY</h2>
+            <h2>Blue Box</h2>
+            <p>HTML: div class="box blue" onclick="this.classList.toggle('clicked')"
+              CSS: .blue:hover {
+              transform: TranslateY(10%);
+              box-shadow: 0 0 20px blue;}</p>
           </div>
           <div class="box orange" onclick="this.classList.toggle('clicked')">
-            <h2>Rotate</h2>
+            <h2>Orange Box</h2>
+            <p>HTML: div class="box orange" onclick="this.classList.toggle('clicked')"
+              
+              CSS : .orange:hover {
+              transform: rotate(-10deg);
+              box-shadow: 0 0 20px orange;}
+            </p>
           </div>
           <div class="box green" onclick="this.classList.toggle('clicked')">
-            <h2>Transform: TranslatingX</h2>
+            <h2>Green Box</h2>
+            <p>HTML: div class="box green" onclick="this.classList.toggle('clicked')"
+              <br>
+              CSS: .green:hover {
+              transform: translateX(30%);
+              box-shadow:  0 0 20px green;
+            }</p>
           </div>
           
 	</main>
